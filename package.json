@@ -2,7 +2,7 @@
   "name": "hasselhoff-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "/hasselhoff-react/",
   "dependencies": {
     "bluebird": "3.5.0",
     "lodash": "4.17.4",
