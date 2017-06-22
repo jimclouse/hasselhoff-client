@@ -2,38 +2,40 @@
   "name": "hasselhoff-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/hasselhoff-react/",
+  "homepage": "/hasselhoff/",
   "dependencies": {
-    "bluebird": "3.5.0",
+    "bluebird": "3.4.7",
+    "core-js": "2.4.1",
     "lodash": "4.17.4",
-    "material-ui": "0.17.0",
-    "mobile-detect": "^1.3.5",
-    "mobx": "3.1.0",
+    "material-ui": "0.16.6",
+    "mobile-detect": "1.3.5",
+    "mobx": "3.0.0",
     "mobx-react": "4.1.0",
-    "mobx-router": "0.0.7",
+    "mobx-router": "git+ssh://git@github.com:hauran/mobx-router.git",
+    "moment": "2.17.1",
     "node-static": "0.7.9",
+    "path": "0.12.7",
     "per-env": "1.0.2",
+    "query-string": "4.3.2",
+    "rc-swipeout": "git+ssh://git@github.com:hauran/swipeout.git",
     "react": "15.4.2",
+    "react-addons-css-transition-group": "15.4.2",
     "react-dom": "15.4.2",
-    "react-iframe": "0.0.4",
-    "react-scripts": "0.8.5",
+    "react-ga": "2.1.2",
+    "react-responsive": "1.2.5",
+    "react-safe-html": "0.4.0",
+    "react-scripts": "0.8.4",
     "react-tap-event-plugin": "2.0.1",
-    "superagent": "3.5.2",
-    "superagent-bluebird-promise": "4.2.0",
-    "sw-precache": "5.0.0"
-  },
-  "devDependencies": {
-    "react-scripts": "0.8.5"
+    "react-text-truncate": "^0.9.3",
+    "superagent": "3.3.2",
+    "superagent-bluebird-promise": "4.1.0",
+    "sw-precache": "4.3.0"
   },
   "scripts": {
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
     "start": "per-env",
     "start:development": "react-scripts start",
-    "start:production": "npm run build; bin/serve_static",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "engines": {
-    "node": "6.11.0"
+    "start:production": "npm run build; bin/serve_static"
   }
 }
