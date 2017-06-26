@@ -6,24 +6,21 @@ import {Route} from 'mobx-router';
 //components
 import Home from './components/home'
 
+let prefix=''
+if (process.env.NODE_ENV === 'production')
+  prefix = process.env.REACT_APP_DATA_BOWIE_MOUNT
+
+console.log('in views...', prefix);
+console.log('path: %s', path);
+
 const views = {
   home: new Route({
-    path: '/',
+    path: `${prefix}/`,
+    component: <Home/>
+  }),
+  catchall: new Route({
+    path:`${prefix}/:def`,
     component: <Home/>
   })
-  // iframe: new Route({
-  //   path: `/iframe`,
-  //   component: <Iframe/>
-  // }),
-  // product: new Route({
-  //   path: '/product',
-  //   component: <ProductDetails/>,
-  //   beforeEnter: (route, params, store) => {
-  //   }
-  // }),
-  // products: new Route({
-  //   path: '/products',
-  //   component: <ProductList/>
-  // })
 };
 export default views;
