@@ -10,9 +10,7 @@ import ToBeImplemented from './components/toBeImplemented'
 
 let prefix=''
 if (process.env.NODE_ENV === 'production')
-  prefix = process.env.REACT_APP_DATA_BOWIE_MOUNT
-
-console.log('in views... prefix: %s', prefix);
+  prefix = process.env.REACT_APP_HASSELHOFF_MOUNT
 
 const views = {
   home: new Route({

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {observer, inject} from 'mobx-react';
 import _ from 'lodash';
-import Group from 'material-ui/svg-icons/social/group'
-import views from '../views'
-import '../css/font.css'
+import FontAwesome from 'react-fontawesome';
+import views from '../views';
+import '../css/font.css';
 import '../css/App.css';
 
 // ui imports
@@ -45,8 +45,8 @@ class AppBar extends Component {
         <div className="clearfix" style={{backgroundColor: '#fff'}} onTouchTap={this.home.bind(this)}>
           <div className="container">
             <div style={{float: 'left', marginLeft:10, marginTop:5}}>
-              <Group/>
-              <span style={{marginLeft:10, fontWeight: 600, fontSize: '2em'}}>Data Bowie</span>
+              <FontAwesome name='life-ring' size='2x'/>
+              <span style={{marginLeft:10, fontWeight: 600, fontSize: '2em'}}>Data Hasselhoff</span>
             </div>
             <div style={{float: 'right', marginRight: 10, marginTop: 10}}>
               <span style={{margin: 'auto'}} >

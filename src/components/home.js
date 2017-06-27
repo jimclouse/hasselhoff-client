@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import {GridList, GridTile} from 'material-ui/GridList';
-import Group from 'material-ui/svg-icons/social/group'
 import {observer, inject} from 'mobx-react';
+import FontAwesome from 'react-fontawesome';
+import AppBar from './appBar';
+import Info from './info';
 import '../css/font.css'
 import '../css/App.css';
-import AppBar from './appBar'
-import Info from './info'
 
 class Home extends Component {
   componentDidMount() {
@@ -20,9 +20,9 @@ class Home extends Component {
         <AppBar style={{height: '50px'}}/>
         <section className='container' id='system-info'>
           <div className='component-wrap' style={{backgroundColor: '#fff', marginTop:30, marginBottom:30}}>
-            <Group/>
-            <span style={{marginLeft:10, fontWeight: 600, fontSize: '2em'}}>Data Bowie</span>
-            <p>While the Hoff is gone to the beach, Ziggy Stardust will watch over your databases</p>
+            <FontAwesome name='life-ring' size='2x'/>
+            <span style={{marginLeft:10, fontWeight: 600, fontSize: '2em'}}>Data Hasselhoff</span>
+            <p>While David watches over the beaches of Malibu, Data Hasselhoff watches over your databases</p>
             <div><hr style={{marginTop:5, marginBottom:15, border:0, borderTop:'1px solid #e9ebed'}} /></div>
             <div><b>Server:</b> {serverInfo.name }</div>
             <div><b>Version:</b> {serverInfo.version !== undefined ? serverInfo.version : null}</div>
