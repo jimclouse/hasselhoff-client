@@ -45,11 +45,12 @@ class ServerStore {
   getServerInfo = action( () => {
     console.log('getServerInfo for %s', this.selectedServer);
   	const opts = {
-		template: "serverStats",
-  		data: {
-  			server: this.selectedServer
+		  template: "serverStats",
+  	  data: {
+  	    server: this.selectedServer
   		}
   	}
+
 
   	return post('query', opts)
       .then( response => {

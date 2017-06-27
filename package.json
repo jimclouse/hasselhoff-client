@@ -28,7 +28,7 @@
   "scripts": {
     "build": "react-scripts build",
     "start": "per-env",
-    "start:development": ". ./.env; react-scripts start",
+    "start:development": ". ./etc/.env; react-scripts start",
     "start:production": "npm run build; bin/serve_static",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
