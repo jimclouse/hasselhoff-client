@@ -6,7 +6,8 @@ import _ from 'lodash';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
 
-import '../App.css';
+import '../css/font.css'
+import '../css/App.css';
 
 const styles = {
   customWidth: {

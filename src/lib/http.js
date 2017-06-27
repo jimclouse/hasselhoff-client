@@ -2,11 +2,11 @@ import request from 'superagent-bluebird-promise'
 export function post (path, data){
   if(path.indexOf('https') === -1)
     path = `${process.env.REACT_APP_HASSELHOFF_SERVER}/${path}`
-    console.log('path: %s %s', path, process.env.REACT_APP_HASSELHOFF_SERVER);
+console.log('HTTP POST path %s data %s', path, JSON.stringify(data));
   return request
     .post(path)
     .timeout(60000)
-    .withCredentials()
+    .withCredentials(true)
     .send(data)
     .then((res) => {
       return res.text?JSON.parse(res.text):null
@@ -28,7 +28,7 @@ export function get (path){
   return request
     .get(path)
     .timeout(60000)
-    .withCredentials()
+    .withCredentials(true)
     .then((res) => {
       return JSON.parse(res.text)
     })

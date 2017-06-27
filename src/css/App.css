@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 400;
+  background-color: #f4f5f6;
+}
+
+h1, h2, h3, h4, h5, p, ul, li {font-family: 'ProximaNova', sans-serif}
+
+.container {
+  max-width: 1133px;
+  margin: 0 auto;
+}
+
+/* Desktop */
+@media (min-width: 800px) {
+  .component-wrap{
+    margin: 0 auto;
+    max-width: 940px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.glg_logo{
+  width: 75px;
+  height: 30px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

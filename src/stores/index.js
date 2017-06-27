@@ -1,9 +1,9 @@
+import ServerStore from './serverStore';
 import {RouterStore} from 'mobx-router';
-import ServerStore from './serverStore'
 
 const store = {
-  router: new RouterStore(),
-  serverStore: new ServerStore()
+  serverStore: new ServerStore(),
+  router: new RouterStore()
 };
 
 export default store;
